@@ -42,9 +42,9 @@ void sort(Address* address, int size)
 	do
 	{
 		swapped = false;
-		for (int i = 0; i < size; ++i)
+		for (int i = 0; i < size-1; ++i)
 		{
-			if (address[i].city < address[i + 1].city)
+			if (address[i].city > address[i + 1].city)
 			{
 				Address temp = address[i];
 				address[i] = address[i + 1];
